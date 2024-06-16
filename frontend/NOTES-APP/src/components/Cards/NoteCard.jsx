@@ -22,7 +22,7 @@ const NoteCard = ({
                 <MdOutlinePushPin className={`icon-bt text-xl ${isPinned ? 'text-green-500' : 'text-slate-300  hover:text-green-500'} `} onClick = {onPinNote} />
             </div>
 
-            <p className="text-l text-slate-600 mt-2" > {content?.slice(0,280)}....... </p>
+            <p className="text-l text-slate-600 mt-2" > {content?.slice(0,180)}....... </p>
 
             <div className="flex items-center justify-between mt-2">
                 <div></div>
