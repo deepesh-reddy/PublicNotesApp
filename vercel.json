@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "backend/index.js", "use": "@vercel/node" },
+    { "src": "frontend/NOTES-APP", "use": "@vercel/static", "config": { "directory": "build" } }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }  // Serve backend for all routes (optional, adjust if needed)
+  ]
+}
